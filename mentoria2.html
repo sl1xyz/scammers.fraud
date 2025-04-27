@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Compra tu Guía</title>
+  <style>
+    /* Estilos generales para el cuerpo de la página */
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    /* Estilo para el GIF de fondo */
+    .gif-background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1; /* Asegura que el GIF esté detrás del contenido */
+    }
+
+    header {
+      background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro para que el texto sea legible */
+      color: white;
+      padding: 30px 0;
+    }
+
+    h1 {
+      margin: 0;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin: 50px auto;
+      flex-wrap: wrap;
+    }
+
+    .opcion {
+      background-color: rgba(255, 255, 255, 0.9); /* Fondo semi-transparente */
+      border: 2px solid #32cd32;
+      border-radius: 10px;
+      padding: 30px;
+      width: 300px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .opcion h2 {
+      color: #222;
+    }
+
+    .opcion p {
+      color: #555;
+    }
+
+    .boton-comprar {
+      margin-top: 20px;
+      padding: 10px 20px;
+      border: 2px solid #32cd32;
+      background-color: transparent;
+      color: #32cd32;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .boton-comprar:hover {
+      background-color: #32cd32;
+      color: white;
+    }
+
+    /* Estilo para la sección de Discord */
+    .discord-icon {
+      margin-top: 20px;
+    }
+
+    .discord-icon img {
+      filter: invert(50%) sepia(100%) saturate(500%) hue-rotate(100deg);
+      width: 40px;
+      height: 40px;
+    }
+
+    footer {
+      margin-top: 60px;
+      background-color: rgba(0, 0, 0, 0.7);
+      color: white;
+      padding: 20px 0;
+    }
+  </style>
+</head>
+<body>
+
+<!-- GIF de fondo -->
+<img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExMzM2bHg5b2hlYzc2ZDR3amtxYzFuMTRjNDJ3bmoxdTZhbWZzdXc5ZiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/hvp7aMfaVul93PlAeD/giphy.gif" class="gif-background" alt="Fondo GIF">
+
+<!-- Reproductor de música -->
+<audio autoplay loop>
+  <source src="TU_ARCHIVO_DE_AUDIO.mp3" type="audio/mp3">
+  Tu navegador no soporta la etiqueta de audio.
+</audio>
+
+<header>
+  <h1>Adquiere tu Guía</h1>
+  <p>Elige la opción que mejor se adapte a ti</p>
+</header>
+
+<div class="container">
+
+  <div class="opcion">
+    <h2>📘 Guía Básica</h2>
+    <p>Contenido esencial para comenzar por tu cuenta.</p>
+    <p><strong>$19.99</strong></p>
+    <button class="boton-comprar" onclick="location.href='https://tusitio.com/basica'">Comprar Guía Básica</button>
+    
+    <!-- Icono de Discord debajo del botón de compra -->
+    <div class="discord-icon">
+      <a href="https://discord.gg/fSADxzqGRs" target="_blank" title="Únete a nuestro Discord">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/discord.svg" alt="Discord">
+      </a>
+      <p style="color:#222; font-size: 14px;">Conecta con nosotros en Discord</p>
+    </div>
+  </div>
+
+  <div class="opcion">
+    <h2>🎓 Guía Completa + Mentoría</h2>
+    <p>Accede a la guía completa y asesoría personalizada.</p>
+    <p><strong>$49.99</strong></p>
+    <button class="boton-comprar" onclick="location.href='https://tusitio.com/completa'">Comprar con Mentoría</button>
+    
+    <!-- Icono de Discord debajo del botón de compra -->
+    <div class="discord-icon">
+      <a href="https://discord.gg/fSADxzqGRs" target="_blank" title="Únete a nuestro Discord">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/discord.svg" alt="Discord">
+      </a>
+      <p style="color:#222; font-size: 14px;">Conecta con nosotros en Discord</p>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  © 2025 Tu Sitio de Guías – Todos los derechos reservados.
+</footer>
+
+</body>
+</html>
